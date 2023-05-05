@@ -3,4 +3,7 @@ $(document).ready(function() {
         $(this).toggleClass("active");
         $(".mobile-menu").fadeToggle()
     });
+
+    // Animate on Scroll //
+    AOS.init();
 });
