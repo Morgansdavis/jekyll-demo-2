@@ -1,6 +1,7 @@
 ---
 layout: default
 popup-gallery: true
+gallery-background: bg-dark
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: square
@@ -39,7 +40,7 @@ gallery:
 
     {% if page.popup-gallery == true %}
     <!--------------- Pop up Gallery ------------------->
-    <section class="padded">
+    <section class="padded {{page.gallery-background}}">
         <h1> Pop-up gallery </h1>
         <div class="gallery grid" id="lightgallery">
             {% for item in page.gallery %}
@@ -49,7 +50,6 @@ gallery:
                     style="background-image: url('{{item.background_image}}');">
                 </div>
               </a> 
-          
             {% endfor %}
 
               <!--------------- Pop up Gallery Button with Captions ------------------->
@@ -72,7 +72,7 @@ gallery:
           
     
     <!--------------- Standard Gallery ------------------->
-    <section class="padded">
+    <section class="padded {{page.gallery-background}}">
         <h1> Standard Gallery </h1>
         <div class="gallery grid">
             {% for item in page.gallery %}
