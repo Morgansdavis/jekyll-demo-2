@@ -1,0 +1,52 @@
+---
+layout: default
+gallery:
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-original1.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-original2.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
+    background_image: /images/the-sleep-co-original4.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background_image: /images/the-sleep-co-original3.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/the-sleep-co-original4.jpg
+  - column-size: col-6
+    aspect-ratio: landscape
+    background_image: /images/the-sleep-co-original3.jpg
+---
+
+<!-- This is the body, this is where all of your page content goes.  -->
+<body>
+
+
+    <!--------------- Header Banner ------------------->
+    <header class="grid tall-60"> 
+     {% include header-nav.html %}
+
+        <div class="text-center col-12-middle"> 
+            <h3 class="font-weight-extra-bold editable">
+                product <span class="featured-text"> gallery</span> 
+            </h3>
+        </div> 
+    </header>
+
+    <section>
+        <div class="gallery grid">
+            {% for item in page.gallery %}
+        
+            <div class="{{item.column-size}}">
+              <div class="bg-image {{item.aspect-ratio}}"
+                   style="background-image: url('{{item.background_image}}');">
+              </div>
+            </div>
+        
+            {% endfor %}
+        </div>
+
+    </section>
