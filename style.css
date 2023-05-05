@@ -212,7 +212,19 @@ footer a {
     background-position: 50% 57%;
 }
 
+/*-----------  Gallery Images --------------------  */
+.gallery .gallery-item {
+    border-bottom: none;
+}
 
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
 
 /* Buttons & Forms --------------------  */
 
