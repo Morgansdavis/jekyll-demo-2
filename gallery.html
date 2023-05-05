@@ -22,7 +22,6 @@ gallery:
     aspect-ratio: landscape
     background_image: /images/the-sleep-co-original3.jpg
 ---
-
 <!-- This is the body, this is where all of your page content goes.  -->
 <body>
 
@@ -46,8 +45,7 @@ gallery:
             {% for item in page.gallery %}
           
               <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-                <div class="bg-image {{item.aspect-ratio}}" 
-                    style="background-image: url('{{item.background_image}}');">
+                <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
                 </div>
               </a> 
             {% endfor %}
@@ -78,8 +76,7 @@ gallery:
             {% for item in page.gallery %}
         
             <div class="{{item.column-size}}">
-              <div class="bg-image {{item.aspect-ratio}}"
-                   style="background-image: url('{{item.background_image}}');">
+              <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
               </div>
             </div>
         
@@ -88,4 +85,4 @@ gallery:
     
     {% endif %}
 
-    </section>
+    </section></section></body>
