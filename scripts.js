@@ -10,12 +10,12 @@ $(document).ready(function() {
     // Lightgallery //
     lightGallery(document.getElementById('lightgallery'), {
         speed: 500,
-        download: false
+        download: false,
     });
 
     lightGallery(document.getElementById('lightgallery-2'), {
         speed: 500,
-        download: false
+        download: false,
     });
 
 });
